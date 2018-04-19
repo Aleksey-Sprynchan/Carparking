@@ -9,13 +9,13 @@ import by.htp.carparking.service.CarService;
 
 public class CarServiceImpl implements CarService {
 
-	private BaseDao carDbDao;
+	private BaseDao<Car> carDbDao;
 
 	public CarServiceImpl() {
 	}
 	
 
-	public void setCarDbDao(BaseDao carDbDao) {
+	public void setCarDbDao(BaseDao<Car> carDbDao) {
 		this.carDbDao = carDbDao;
 	}
 

@@ -8,9 +8,7 @@ import by.htp.carparking.web.commands.BaseCommand;
 
 public class ActionManagerContext {
 
-	public ActionManagerContext() {
-		// TODO Auto-generated constructor stub
-	}
+	public ActionManagerContext() {	}
 	
 	public static BaseCommand defineCommand(HttpServletRequest request, 
 			WebApplicationContext webApplicationContext) {

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean name="INDEX_FORWARD" class="by.htp.carparking.web.commands.impl.IndexForwardCommandImpl">
+		<property name="carService" ref="carService"></property>
+	</bean>	
+	
+	<bean name="UPDATE_CAR" class="by.htp.carparking.web.commands.impl.UpdateCarCommandImpl">
+		<property name="carService" ref="carService"></property>
+	</bean>	
+	
+	<bean name="EXECUTE_UPDATE" class="by.htp.carparking.web.commands.impl.ExecuteUpdateCommandImpl">
+		<property name="carService" ref="carService"></property>
+	</bean>	
+	
+	<bean name="CREATE_CAR" class="by.htp.carparking.web.commands.impl.CreateCarCommandImpl"/>
+	
+	<bean name="EXECUTE_CREATE" class="by.htp.carparking.web.commands.impl.ExecuteCreateCommandImpl">
+		<property name="carService" ref="carService"></property>
+	</bean>
+	
+	<bean name="DELETE_CAR" class="by.htp.carparking.web.commands.impl.DeleteCarCommandImpl">
+		<property name="carService" ref="carService"></property>
+	</bean>
+	
+</beans>

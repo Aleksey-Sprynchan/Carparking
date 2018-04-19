@@ -26,13 +26,7 @@ public class MainServlet extends HttpServlet {
 
 	@Override
 	public void init() throws ServletException {
-		System.out.println("init");
-	//	Appcontext.appContext = new ClassPathXmlApplicationContext("car-context.xml");
-//		Appcontext.appContext = new XmlWebApplicationContext();
-//		Appcontext.appContext.setConfigLocation("/WEB-INF/car-context.xml");
-//		Appcontext.appContext.setServletContext(getServletContext());
-//		Appcontext.appContext.refresh();
-		
+		System.out.println("init");		
 	}
 
 	@Override
